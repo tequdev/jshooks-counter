@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 import './App.css'
 
 import {
@@ -9,21 +9,21 @@ import {
   useWallet,
   useWallets,
 } from '@xrpl-wallet-standard/react'
-import { Client } from 'xrpl';
+import { Client } from 'xrpl'
 import { sha256 } from '@xrplf/isomorphic/sha256'
 
 const strToHex = (str: string) => {
-  let hex = '';
+  let hex = ''
   for (let i = 0; i < str.length; i++)
-    hex += '' + str.charCodeAt(i).toString(16);
-  return hex;
+    hex += '' + str.charCodeAt(i).toString(16)
+  return hex
 }
 
 const hexToStr = (hex: string) => { 
-  let str = '';
+  let str = ''
   for (let i = 0; i < hex.length; i += 2)
-    str += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
-  return str;
+    str += String.fromCharCode(parseInt(hex.substr(i, 2), 16))
+  return str
 }
 
 const contractAccount = 'ra6gET1cLepoxX8FDV4DDWU4HVBEKF1E5X'
@@ -105,7 +105,9 @@ function App() {
       setWaitingForValidated(false)
       const meta = signedTransaction.tx_json.meta
       if (typeof meta !== 'string' && meta?.TransactionResult !== 'tesSUCCESS') {
+        // @ts-expect-error describe
         if(meta.HookExecutions && meta.HookExecutions.length>0)
+          // @ts-expect-error describe
           alert('Transaction failed: ' + hexToStr(meta.HookExecutions[0].HookExecution.HookReturnString))
         else
           alert('Transaction failed')
