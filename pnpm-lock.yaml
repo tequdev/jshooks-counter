@@ -11,8 +11,8 @@ importers:
   app:
     dependencies:
       '@xrpl-wallet-adapter/local-testonly':
-        specifier: ^0.1.3
-        version: 0.1.3
+        specifier: ^0.1.4
+        version: 0.1.4
       '@xrpl-wallet-standard/react':
         specifier: ^0.1.1
         version: 0.1.1(@types/react@18.3.3)(react@18.3.1)
@@ -755,8 +755,8 @@ packages:
   '@xrpl-wallet-adapter/base@0.1.1':
     resolution: {integrity: sha512-IFW9kvNuxfaCNEQLc4tKdON9LPFoyr+afjzQ0Qc2vrIj7klsS5kJ/g830sL4uaSZVBiXgjWhp9HqjKuoMb/Diw==}
 
-  '@xrpl-wallet-adapter/local-testonly@0.1.3':
-    resolution: {integrity: sha512-LnI2IeFpeO1Ee2gmheEDFloEC/24XST0DVnVcX9hnjiyrESpBg2srrrQqY5jfUsC2LcR8FGmXNahYfJUkeamKw==}
+  '@xrpl-wallet-adapter/local-testonly@0.1.4':
+    resolution: {integrity: sha512-Su6bbucLOPxvHT666xjPonoxo7+KEgAgFWII1mU0pFHpIJ1Pz3waXKLUcOhYZKmqVBM6KZH5tp5eaB5pNT9HdQ==}
 
   '@xrpl-wallet-standard/app@0.1.1':
     resolution: {integrity: sha512-q9bc2bKefsejdVeRDxspCpMrI2jdJeRmEfwUzmHiDFz0d0WbiYEE7N10rzdIp+iZzO9BWpDgu1DqoIkBGwMgGw==}
@@ -2290,7 +2290,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@xrpl-wallet-adapter/local-testonly@0.1.3':
+  '@xrpl-wallet-adapter/local-testonly@0.1.4':
     dependencies:
       '@wallet-standard/base': 1.0.1
       '@xrpl-wallet-adapter/base': 0.1.1
