@@ -1,0 +1,23 @@
+{
+  "name": "@jshooks-counter/contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:hook": "js2wasm-cli src/index.ts build",
+    "build:payload": "tsx scripts/createPayload.ts",
+    "build": "npm run build:hook && npm run build:payload"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jshooks-api": "^1.0.5"
+  },
+  "devDependencies": {
+    "@transia/hooks-toolkit": "2.0.0-alpha.4",
+    "@tsconfig/node18": "^18.2.4",
+    "js2wasm-cli": "^1.0.5",
+    "tsx": "^4.17.0"
+  }
+}

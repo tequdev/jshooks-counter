@@ -1,0 +1,7 @@
+{
+  "extends": "@tsconfig/node18",
+  "compilerOptions": {
+    "types": ["jshooks-api/globals"]
+  },
+  "include": ["src/index.ts"]
+}
